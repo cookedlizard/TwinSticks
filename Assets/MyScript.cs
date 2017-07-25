@@ -8,6 +8,7 @@ public class MyScript : MonoBehaviour {
 	void Start () {
 		print ("What happened to the golf shoes?");
 		print ("Something else Happened");
+		print ("And Another thing changed");
 	}
 	
 	// Update is called once per frame
