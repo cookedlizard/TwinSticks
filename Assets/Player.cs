@@ -3,18 +3,15 @@ using System.Collections;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Player : MonoBehaviour {
-	void Update(){
 
-		if (CrossPlatformInputManager.GetAxis ("Vertical") > 0) {
-			print ("Moving Forward");
-		} else if (CrossPlatformInputManager.GetAxis ("Horizontal") < 0) {
-			print ("Moving Left");
-		} else if (CrossPlatformInputManager.GetAxis ("Vertical") < 0) {
-			print ("Moving Backward");
-		} else if (CrossPlatformInputManager.GetAxis ("Horizontal") > 0) {
-			print ("Moving Right");
-		} else if (CrossPlatformInputManager.GetAxis ("Jump") == 1) {
-			print("Jumping");
-		}
+	// Use this for initialization
+	void Start () {
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		Debug.Log ("H: " + CrossPlatformInputManager.GetAxis("Horizontal"));
+		Debug.Log ("V: " + CrossPlatformInputManager.GetAxis("Vertical"));
 	}
 }
